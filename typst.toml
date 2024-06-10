@@ -1,0 +1,15 @@
+[package]
+name = "tpyst-cn-book"
+version = "0.1.0"
+entrypoint = "lib.typ"
+repository = "https://github.com/shenxiangzhuang/tpyst-cn-book"
+authors = ["Mathew Shen <@shenxiangzhuang>"]
+license = "MIT"
+description = "Tpyst中文书籍模板，A Typst template for Chinese Book"
+keywords = ["Typst", "Book", "Chinese"]
+categories = ["book"]
+
+[template]
+path = "template"
+entrypoint = "book.typ"
+thumbnail = "thumbnail.png"
