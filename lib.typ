@@ -1,6 +1,9 @@
 #import "./components/indent.typ": fake-par
 #import "./components/font.typ": 字体, 字号
 
+#import "@preview/outrageous:0.1.0"
+
+
 
 #let book(title, doc) = {
   set text(lang: "zh")
@@ -47,6 +50,8 @@
   show heading.where(level: 4): it => pad(left: 2em, it)
 
   // 目录
+  show outline.entry: outrageous.show-entry
+
   show outline.entry.where(
     level: 1
   ): it => {
