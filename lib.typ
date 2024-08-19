@@ -51,7 +51,27 @@
     level: 1
   ): it => {
     v(12pt, weak: true)
-    set text(font: 字体.楷体, weight: "bold")
+    set text(font: 字体.楷体, 
+    weight: "bold",
+    )
+    it
+  }
+
+  show outline.entry.where(
+    level: 2
+  ): it => {
+    set text(font: 字体.楷体, 
+    weight: "light",
+    )
+    it
+  }
+
+    show outline.entry.where(
+    level: 3
+  ): it => {
+    set text(font: 字体.楷体, 
+    weight: "light",
+    )
     it
   }
   outline(title: "目录", depth: 3, indent: auto)

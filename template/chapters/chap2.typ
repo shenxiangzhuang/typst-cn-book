@@ -5,10 +5,25 @@
 
 
 == 代码
+
+=== Rust
+
 下面是一个Rust代码块示例:
+
+
 ```rust
 fn main() {
     println!("Hello World!");
+}
+```
+
+=== Python
+
+
+下面是一个Python代码块示例:
+```python
+def main():
+    print("Hello World!")
 }
 ```
 
