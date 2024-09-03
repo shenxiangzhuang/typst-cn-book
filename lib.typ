@@ -1,6 +1,9 @@
 #import "./components/indent.typ": fake-par
 #import "./components/font.typ": 字体, 字号
 
+#import "@preview/outrageous:0.1.0"
+
+
 
 #let book(title, doc) = {
   set text(lang: "zh")
@@ -47,11 +50,33 @@
   show heading.where(level: 4): it => pad(left: 2em, it)
 
   // 目录
+  show outline.entry: outrageous.show-entry
+
   show outline.entry.where(
     level: 1
   ): it => {
     v(12pt, weak: true)
-    set text(font: 字体.楷体, weight: "bold")
+    set text(font: 字体.楷体, 
+    weight: "bold",
+    )
+    it
+  }
+
+  show outline.entry.where(
+    level: 2
+  ): it => {
+    set text(font: 字体.楷体, 
+    weight: "light",
+    )
+    it
+  }
+
+    show outline.entry.where(
+    level: 3
+  ): it => {
+    set text(font: 字体.楷体, 
+    weight: "light",
+    )
     it
   }
   outline(title: "目录", depth: 3, indent: auto)
