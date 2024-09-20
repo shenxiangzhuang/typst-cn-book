@@ -10,22 +10,26 @@
 
 下面是一个Rust代码块示例:
 
-
+#align(center, 
 ```rust
 fn main() {
     println!("Hello World!");
 }
 ```
+)
+
 
 === Python
 
-
 下面是一个Python代码块示例:
+
+#align(center, 
 ```python
 def main():
     print("Hello World!")
-}
 ```
+)
+
 
 #lorem(100)
 
