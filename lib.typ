@@ -46,8 +46,8 @@
   // 正文各节二级及以下标题 宋体小四号加粗左对齐空两格
   show heading.where(level: 3): set text(font: 字体.宋体, size: 字号.小四, weight: "bold")
   show heading.where(level: 4): set text(font: 字体.宋体, size: 字号.小四, weight: "bold")
-  show heading.where(level: 3): it => pad(left: 2em, it)
-  show heading.where(level: 4): it => pad(left: 2em, it)
+  show heading.where(level: 3): it => pad(left: 0em, it)
+  show heading.where(level: 4): it => pad(left: 0em, it)
 
   // 目录
   show outline.entry: outrageous.show-entry
@@ -110,6 +110,7 @@
 
   // 单栏
   columns(1, doc)
+
 
 }
 
